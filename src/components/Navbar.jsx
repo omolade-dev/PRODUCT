@@ -1,16 +1,17 @@
-function Navbar() {
+import Button from "./Button";
+
+function Navbar(props) {
   return (
     <div>
-      <h2>FILTER BY CATEGORY </h2>
+      <h4>FILTER BY CATEGORY </h4>
 
-      <div className="btn">
-        <button> ALL </button>
-        <button> ALL </button>
-        <button> ALL </button>
-        <button> ALL </button>
-        <button> ALL </button>
-        <button> ALL </button>
-      </div>
+      <Button
+        electronics={props.electronics}
+        clothing={props.clothing}
+        home={props.home}
+        books={props.books}
+        accessories={props.accessories}
+      />
     </div>
   );
 }
