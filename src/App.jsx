@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <div className="logo">
-        <h1>Product Store!</h1>
+        <h1>Product Store</h1>
 
         <p>Browse our collection of products</p>
       </div>

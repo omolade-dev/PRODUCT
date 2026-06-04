@@ -1,12 +1,10 @@
-import Button from "./Button";
-
 function Navbar() {
   return (
     <div>
       <h4>FILTER BY CATEGORY </h4>
 
       <div className="btn">
-        <button>All</button>
+        <button className="active">All</button>
         <button>Electronics</button>
         <button>Footwear</button>
         <button>Sports</button>

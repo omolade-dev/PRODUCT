@@ -30,14 +30,22 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background: rgb(214, 211, 211);
+.active {
+  background-color: blue;
+  color: white;
 }
 
-categories {
+.active:hover {
+  background: rgb(64, 64, 97);
+}
+.btn {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: rgb(214, 211, 211);
 }
 
 .img {
@@ -79,5 +87,5 @@ categories {
   align-items: center;
   box-sizing: border-box;
 }
-@media (width) {
+@media (min-width: ) and (max-width: 768px) {
 }
