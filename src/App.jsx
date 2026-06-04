@@ -14,15 +14,17 @@ function App() {
 
       <p>Showing 13 products</p>
 
-      {products.map((products) => (
-        <Card
-          key={products.id}
-          imgURL={products.imgURL}
-          name={products.name}
-          price={products.price}
-          category={products.category}
-        />
-      ))}
+      <div className="container">
+        {products.map((products) => (
+          <Card
+            key={products.id}
+            imgURL={products.imgURL}
+            name={products.name}
+            price={products.price}
+            category={products.category}
+          />
+        ))}
+      </div>
     </div>
   );
 }

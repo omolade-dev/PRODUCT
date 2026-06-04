@@ -1,21 +1,19 @@
 function Card(props) {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="top">
-          <img className="img" src={props.imgURL} alt={props.name} />
+    <div className="card">
+      <div className="top">
+        <img className="img" src={props.imgURL} alt={props.name} />
+      </div>
+
+      <div className="bottom">
+        <div>
+          <h3>{props.name}</h3>
+          <p>{props.category}</p>
         </div>
 
-        <div className="bottom">
-          <div>
-            <h3>{props.name}</h3>
-            <p>{props.category}</p>
-          </div>
-
-          <div>
-            <h3>{props.price}</h3>
-            <p>In Stock</p>
-          </div>
+        <div>
+          <h3>{props.price}</h3>
+          <p>In Stock</p>
         </div>
       </div>
     </div>
