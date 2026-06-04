@@ -1,6 +1,20 @@
 import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import products from "./Products";
 
-function App(props) {
+function createCard(products) {
+  return (
+    <Card
+      key={products.id}
+      img={products.img}
+      name={products.name}
+      price={products.price}
+      category={products.category}
+    />
+  );
+}
+
+function App() {
   return (
     <div>
       <div classname="logo">
@@ -11,21 +25,8 @@ function App(props) {
       <Navbar />
 
       <p>Showing 10 products</p>
-      <div className="card">
-        <div className="top">{props.img}</div>
 
-        <div className="bottom">
-          <div>
-            <h3>{props.name}</h3>
-            <p>{props.category}</p>
-          </div>
-
-          <div>
-            <h3>{props.price}</h3>
-            <p>In Stock</p>
-          </div>
-        </div>
-      </div>
+      {products.map(createCard)}
     </div>
   );
 }
