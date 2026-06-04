@@ -2,18 +2,6 @@ import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import products from "./Products";
 
-// function createCard(products) {
-//   return (
-//     <Card
-//       key={products.id}
-//       imgURL={products.imgURL}
-//       name={products.name}
-//       price={products.price}
-//       category={products.category}
-//     />
-//   );
-// }
-
 function App() {
   return (
     <div>
@@ -24,7 +12,7 @@ function App() {
       </div>
       <Navbar />
 
-      <p>Showing 10 products</p>
+      <p>Showing 13 products</p>
 
       {products.map((products) => (
         <Card

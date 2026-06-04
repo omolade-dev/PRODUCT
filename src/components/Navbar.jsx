@@ -1,21 +1,18 @@
 import Button from "./Button";
 
-const categories = [
-  "All",
-  "Electronics",
-  "Footwear",
-  "Sports",
-  "Books",
-  "Accessories",
-];
-
 function Navbar() {
   return (
     <div>
       <h4>FILTER BY CATEGORY </h4>
-      {categories.map((category) => (
-        <Button key={category} name={category} />
-      ))}
+
+      <div className="btn">
+        <button>All</button>
+        <button>Electronics</button>
+        <button>Footwear</button>
+        <button>Sports</button>
+        <button>Books</button>
+        <button>Accessories</button>
+      </div>
     </div>
   );
 }
