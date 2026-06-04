@@ -1,7 +1,9 @@
 function Card(props) {
   return (
     <div className="card">
-      <div className="top">{props.img}</div>
+      <div className="top">
+        <img className="img" src={props.imgURL} alt={props.name} />
+      </div>
 
       <div className="bottom">
         <div>
