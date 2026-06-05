@@ -45,7 +45,8 @@ button {
 }
 
 button:hover {
-  background: rgb(214, 211, 211);
+  background: blue;
+  color: white;
 }
 
 .img {

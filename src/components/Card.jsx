@@ -13,7 +13,9 @@ function Card(props) {
 
         <div>
           <h3>{props.price}</h3>
-          <p>In Stock</p>
+          <p style={{ color: props.inStock ? "green" : "red" }}>
+            {props.inStock ? "In Stock" : "Out of Stock"}
+          </p>
         </div>
       </div>
     </div>

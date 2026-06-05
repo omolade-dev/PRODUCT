@@ -5,6 +5,7 @@ const products = [
     name: "Coffee",
     price: "$3.99",
     category: "All",
+    inStock: true,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const products = [
     name: "Earring",
     price: "$19.99",
     category: "Accessories",
+    inStock: true,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const products = [
     name: "Extension",
     price: "$15.99",
     category: "Home",
+    inStock: false,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const products = [
     name: "Football",
     price: "$25.99",
     category: "Sports",
+    inStock: true,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const products = [
     name: "White Ball",
     price: "$32.99",
     category: "Sports",
+    inStock: false,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const products = [
     name: "Specs",
     price: "$12.99",
     category: "Accessories",
+    inStock: false,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const products = [
     name: "Headphones",
     price: "$21.99",
     category: "Electronics",
+    inStock: true,
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const products = [
     name: "Lamp",
     price: "$20.99",
     category: "Home",
+    inStock: false,
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const products = [
     name: "Plug",
     price: "$19.99",
     category: "Home",
+    inStock: true,
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const products = [
     name: "Shoe",
     price: "$29.99",
     category: "Footwear",
+    inStock: false,
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ const products = [
     name: "Sneaker",
     price: "$39.99",
     category: "Footwear",
+    inStock: true,
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ const products = [
     name: "Sneaker",
     price: "$49.99",
     category: "Footwear",
+    inStock: true,
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ const products = [
     name: "Speaker",
     price: "$59.99",
     category: "All",
+    inStock: false,
   },
 ];
 export default products;

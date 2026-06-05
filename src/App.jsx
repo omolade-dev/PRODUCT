@@ -22,6 +22,7 @@ function App() {
             name={products.name}
             price={products.price}
             category={products.category}
+            inStock={products.inStock}
           />
         ))}
       </div>
