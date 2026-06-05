@@ -58,8 +58,9 @@ button:hover {
 
 .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 30px;
   padding: 20px 0;
   box-sizing: border-box;
@@ -88,5 +89,24 @@ button:hover {
   align-items: center;
   box-sizing: border-box;
 }
-@media (min-width: ) and (max-width: 768px) {
+@media (min-width: 220px) and (max-width: 400px) {
+  .card {
+    max-width: 100px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 400px) {
+  .card {
+    max-width: 100px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
