@@ -4,7 +4,7 @@ import products from "./Products";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <div className="logo">
         <h1>Product Store</h1>
 
@@ -14,7 +14,7 @@ function App() {
 
       <p>Showing 13 products</p>
 
-      <div className="container">
+      <div className="card-container">
         {products.map((products) => (
           <Card
             key={products.id}
