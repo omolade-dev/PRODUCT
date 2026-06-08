@@ -1,8 +1,16 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import products from "./Products";
 
 function App() {
+  const [category, setCategory] = useState("All");
+
+  const filteredProducts =
+    category === "All"
+      ? products
+      : products.filter((product) => product.category === category);
+
   return (
     <div className="container">
       <div className="logo">
@@ -10,19 +18,19 @@ function App() {
 
         <p>Browse our collection of products</p>
       </div>
-      <Navbar />
+      <Navbar category={category} setCategory={setCategory} />
 
-      <p>Showing 13 products</p>
+      <p>Showing {filteredProducts.length} products</p>
 
       <div className="card-container">
-        {products.map((products) => (
+        {filteredProducts.map((product) => (
           <Card
-            key={products.id}
-            imgURL={products.imgURL}
-            name={products.name}
-            price={products.price}
-            category={products.category}
-            inStock={products.inStock}
+            key={product.id}
+            imgURL={product.imgURL}
+            name={product.name}
+            price={product.price}
+            category={product.category}
+            inStock={product.inStock}
           />
         ))}
       </div>

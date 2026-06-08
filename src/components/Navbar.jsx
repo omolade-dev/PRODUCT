@@ -1,11 +1,11 @@
 import Button from "./Button";
 
-function Navbar() {
+function Navbar({ category, setCategory }) {
   return (
     <div>
       <h4>FILTER BY CATEGORY </h4>
 
-      <Button />
+      <Button category={category} setCategory={setCategory} />
     </div>
   );
 }

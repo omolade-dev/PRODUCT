@@ -20,7 +20,7 @@ const products = [
     imgURL: "/assets/image/extension.jpg",
     name: "Extension",
     price: "$15.99",
-    category: "Home",
+    category: "Electronics",
     inStock: false,
   },
   {
@@ -100,7 +100,7 @@ const products = [
     imgURL: "/assets/image/speaker.jpg",
     name: "Speaker",
     price: "$59.99",
-    category: "All",
+    category: "Electronics",
     inStock: false,
   },
 ];
